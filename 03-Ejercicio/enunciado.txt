@@ -1,0 +1,13 @@
+Jerarquia de clases Persona, Cliente, Agente, 
+donde Cliente y Agente son Personas
+
+Donde Persona tiene atributo nombre (String) y edad (Int) (accesibles L y E)
+
+Donde Cliente tiene atributo numeroCuenta (String) (solo escritura)
+
+Donde Agente tiene atributo nomina (String) (de acceso interno)
+
+Edad sea obligatorio y mayor que 18
+
+Contructores con todos los parametros y sin parametros para
+todas las tipologias
