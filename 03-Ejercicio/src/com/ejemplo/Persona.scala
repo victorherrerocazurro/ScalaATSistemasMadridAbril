@@ -1,12 +1,8 @@
 package com.ejemplo
 
-class Persona (var nombre : String, edad : Int){
+class Persona (var nombre : String, private var _edad : Int){  
   
-  var _edad : Int = 0
-  
-  this.edad_=(edad)
-  
-  def edad() : Int = _edad
+  def edad = _edad
   
   def edad_=(edad : Int) : Unit = {
     if (edad >= 18)
@@ -22,9 +18,17 @@ class Cliente(
     edad : Int, 
     numCuenta: String) extends Persona(nombre, edad) {
   
-  var _numCuenta : String = null
+  private var _numCuenta : String = null
   
-  def numCuenta_=(numCuenta : String) : Unit = {_numCuenta = numCuenta}
+  //Para solo escritura
+  //def numCuenta = _numCuenta
+  
+  //Debido a las restricciones, sería mas interesante renombrar el método a modificarMiNumeroDeCuentaA
+  def modificarMiNumeroDeCuentaA(numCuenta : String) : Unit = {_numCuenta = numCuenta}
+  
+  override def toString() : String = {
+    s"Cliente[nombre=$nombre,edad=$edad,numCuenta=${_numCuenta}]"
+  }
   
 }
 
