@@ -39,6 +39,12 @@ object Fibonnacci extends App {
   
   val fibonacci = rango.map(calcularElNesimoNumeroDeFibonnacci(_))
   
+  rango.map(
+      (i) => {
+        calcularElNesimoNumeroDeFibonnacci(i)
+     }
+  )
+  
   println(rango)
   println(fibonacci)
 }

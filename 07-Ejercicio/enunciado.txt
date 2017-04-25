@@ -1,0 +1,10 @@
+Partiendo de n funciones que realizan la conversion monetaria entre
+distintas divisas desde y hacia la divisa de referencia que será el 
+Dollar.
+
+EuroDollar
+
+DollarRublo
+
+Escribir la tranformacion el Euro al Rublo, empleando funciones de 
+orden mayor

@@ -4,9 +4,12 @@ object Prueba extends App {
   
   var pepe = new Persona("Pepe", 12)
 
-  pepe.edad = 19
+  /*pepe.edad= 19
+  pepe.edad_=(19)*/
+  
+  println(pepe.edad)
 
-  var juan = new Cliente("Juan", 32, "Antiguo")
+  var juan = new Cliente("Juan", pepe.edad, "Antiguo")
 
   juan modificarMiNumeroDeCuentaA "Nuevo"
 
