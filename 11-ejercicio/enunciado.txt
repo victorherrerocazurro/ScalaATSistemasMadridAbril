@@ -1,0 +1,1 @@
+Incluir y emplear commons-logging (log4j) empelando SBT
